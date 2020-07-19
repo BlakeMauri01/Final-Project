@@ -2,4 +2,7 @@
     <div class="pull-left">
       <h4 class="list-group-item-heading">{{menu?.name}}</h4>
     </div>
+    <span class="pull-right">
+      <img [src]="menu?.menuUrl" alt="{{ menu?.name }}" class="img-responsive" style="height: 110px; width: 150px;" *ngIf="menu?.menuUrl">
+    </span>
   </a>

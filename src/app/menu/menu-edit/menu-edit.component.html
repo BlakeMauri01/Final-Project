@@ -34,7 +34,7 @@
           </div>
   
           <div class="col-sm-12 form-group">
-            <label for="url">MEnu URL</label>
+            <label for="url">Menu URL</label>
             <input
               type="text"
               id="url"
@@ -46,6 +46,19 @@
               #url="ngModel"
               required>
               <div class="alert alert-danger" *ngIf="url.invalid && url.touched">Enter a valid Menu URL</div>
+          </div>
+
+          <div class="col-sm-12 form-group">
+            <label for="imageUrl">Menu Contents</label>
+            <input
+              type="text"
+              id="menuUrl"
+              class="form-control"
+              size="150"
+              max="255"
+              name="menuUrl"
+              [ngModel]="menu?.menuUrl"
+              #imageurl="ngModel">
           </div>
         </div>
   

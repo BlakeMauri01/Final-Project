@@ -5,5 +5,6 @@ export class Menu {
         public description: string,
         public url: string,
         public children: Menu[],
+        public menuUrl: string,
     ) { }
 }

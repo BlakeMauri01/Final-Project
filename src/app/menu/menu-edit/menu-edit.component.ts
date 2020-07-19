@@ -48,7 +48,8 @@ export class MenuEditComponent implements OnInit {
       value.name,
       value.description,
       value.url,
-      null
+      null,
+      value.menuUrl
     );
 
     if (this.editMode) {
